@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"  href="styleBMI.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+    
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">FitLife</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">COACHES</a></li>
+                    <li><a href="#">SINGLE COACH PAGE</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SCHEDULE <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Schedule 1</a></li>
+                      <li><a href="#">Schedule 2</a></li>
+                      <li><a href="#">Schedule 3</a></li>
+                    </ul>
+                  </li>
+                 
+
+                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">BMI Calculator</a></li>
+                      <li><a href="#">Page 1-2</a></li>
+                      <li><a href="#">Page 1-3</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Page 1-1</a></li>
+                      <li><a href="#">Page 1-2</a></li>
+                      <li><a href="#">Page 1-3</a></li>
+                    </ul>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+
+</header>
+
+<div class="container">
+    <table class="table">
+      <thead>
+         <tr>
+          <th>BMI</th>
+          <th>WEIGHT STATUS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Below 18.5</td>
+          <td>Underweight</td>
+        </tr>
+        <tr>
+          <td>18.5 - 24.9</td>
+          <td>Healthy</td>
+        </tr>
+        <tr>
+            <td>25.0 - 29.9</td>
+            <td>Overweight</td>
+          </tr>
+          <tr>
+            <td>30.0 - and Above</td>
+            <td>Obese</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+
+    <div class="container">  
+        <h1>BMI Calculator</h1>
+        <label>
+            <input id="h-input" type="number" placeholder="Enter Your Height in Centimeters: ">
+        </label>        
+        <label>
+            <input id="w-input" type="number" placeholder="Enter Your Weight in Kilogrames: ">
+        </label>            
+        <button type="submit" onclick="Calculate()">Calculate BMI</button>
+            
+        <div class="bmi-value">
+            <h4>BMI Value: </h4>
+            <div id="bmi-output" style="font-size: medium;"></div>
+        </div>
+        <div class="status">
+            <h4>Status: </h4>
+            <div id="bmi-status"></div>
+        </div>   
+    </div>
+    
+</body>
+</html>
